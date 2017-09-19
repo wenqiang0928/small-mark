@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SmallModelStoreContainer" CdmEntityContainer="SmallModelContainer">
+    <EntitySetMapping Name="goodsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(SmallModel.goods)">
+        <MappingFragment StoreEntitySet="goodsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="thumb_url" ColumnName="thumb_url" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

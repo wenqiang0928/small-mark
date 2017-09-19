@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="SmallModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="SmallModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="goodsSet" EntityType="SmallModel.goods" />
+  </EntityContainer>
+  <EntityType Name="goods">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false">
+      <Documentation>
+        <LongDescription>食品名称</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Name="thumb_url" Type="String" Nullable="false">
+      <Documentation>
+        <LongDescription>图片地址</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Name="price" Type="String" Nullable="false">
+      <Documentation>
+        <LongDescription>价格</LongDescription>
+      </Documentation>
+    </Property>
+  </EntityType>
+</Schema>
